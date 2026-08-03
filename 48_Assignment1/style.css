@@ -1,0 +1,168 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:linear-gradient(to right,#0f172a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+
+/* ===========================
+   Navigation
+=========================== */
+
+nav{
+    background:#1e293b;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav li{
+    margin:15px 20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+
+/* ===========================
+   Main
+=========================== */
+
+main{
+    width:90%;
+    margin:30px auto;
+}
+
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+
+/* ===========================
+   Domain Cards
+=========================== */
+
+.domains{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    flex:1;
+    transition:0.3s;
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+
+/* ===========================
+   Aside
+=========================== */
+
+aside{
+    background:white;
+    padding:25px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+aside h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+aside ul{
+    margin-left:20px;
+}
+
+aside li{
+    margin-bottom:10px;
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
