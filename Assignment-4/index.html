@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Employee Registration Form</h1>
+
+        <form id="registrationForm" onsubmit="return validateForm()">
+
+            <!-- Employee Name -->
+            <div class="form-group">
+                <label for="empName">Employee Name:</label>
+                <input type="text" id="empName" placeholder="Enter full name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="empEmail">Email:</label>
+                <input type="email" id="empEmail" placeholder="example@mail.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="empPassword">Password:</label>
+                <input type="password" id="empPassword" placeholder="Minimum 6 characters">
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="empPhone">Phone Number:</label>
+                <input type="text" id="empPhone" placeholder="10-digit phone number">
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <!-- Department -->
+            <div class="form-group">
+                <label for="empDept">Department:</label>
+                <select id="empDept">
+                    <option value="">-- Select Department --</option>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+                <span class="error" id="deptError"></span>
+            </div>
+
+            <button type="submit" id="registerBtn">Register Employee</button>
+
+        </form>
+
+        <!-- Success message shown after valid submission -->
+        <p id="successMsg" class="success-msg"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

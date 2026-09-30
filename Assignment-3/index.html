@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+        <!-- Input Form -->
+        <div class="form-section">
+            <h2>Add Student Result</h2>
+
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" placeholder="Enter student name">
+            </div>
+
+            <div class="form-group">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" placeholder="Enter roll number">
+            </div>
+
+            <div class="form-group">
+                <label for="subject1">Subject 1 Marks (out of 100):</label>
+                <input type="number" id="subject1" placeholder="0 - 100" min="0" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="subject2">Subject 2 Marks (out of 100):</label>
+                <input type="number" id="subject2" placeholder="0 - 100" min="0" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="subject3">Subject 3 Marks (out of 100):</label>
+                <input type="number" id="subject3" placeholder="0 - 100" min="0" max="100">
+            </div>
+
+            <!-- Error message shown when validation fails -->
+            <p id="errorMsg" class="error-msg"></p>
+
+            <button id="addBtn" onclick="addResult()">Add Result</button>
+        </div>
+
+        <!-- Topper display -->
+        <div id="topperSection" class="topper-section" style="display: none;">
+            <strong>Topper:</strong> <span id="topperName"></span> - <span id="topperPercent"></span>%
+        </div>
+
+        <!-- Results Table -->
+        <div class="table-section">
+            <h2>Student Results</h2>
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student Name</th>
+                        <th>Subject 1</th>
+                        <th>Subject 2</th>
+                        <th>Subject 3</th>
+                        <th>Total</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows are added dynamically by script.js -->
+                </tbody>
+            </table>
+            <p id="noData" class="no-data">No students added yet.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
