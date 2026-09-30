@@ -3,4 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/Full-Stack-Assignments/Assignment-6/',
 })
