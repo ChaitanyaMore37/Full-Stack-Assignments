@@ -4,4 +4,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Full-Stack-Assignments/Assignment-7/',
+  build: {
+    outDir: '.',       // build directly into Assignment-7/ instead of dist/
+    emptyOutDir: false // don't wipe source files like src/, package.json
+  }
 })
